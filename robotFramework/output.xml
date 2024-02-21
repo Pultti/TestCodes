@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-19T19:26:17.568611" rpa="false" schemaversion="5">
+<suite id="s1" name="frontEnd" source="C:\omatNettisivut\Web_Portfolio\robotFramework\frontEnd.robot">
+<test id="s1-t1" name="Verify Page Title" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:17.843567" level="INFO">Opening browser 'Chrome' to base url 'https://pultti.github.io/Web_Portfolio/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-19T19:26:17.843567" elapsed="2.702192"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.553776" level="INFO">Page title is 'Information about me'.</msg>
+<arg>Information about me</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.545759" elapsed="0.008017"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:17.843567" elapsed="2.710209"/>
+</test>
+<test id="s1-t2" name="Verify Navigation Bar is Visible" line="13">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.569781" level="INFO">Current page contains element 'css=nav'.</msg>
+<arg>css=nav</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.553776" elapsed="0.016005"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.553776" elapsed="0.016005"/>
+</test>
+<test id="s1-t3" name="Verify Content Sections are Present" line="16">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.593964" level="INFO">Current page contains text 'Who am I?'.</msg>
+<arg>Who am I?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.577776" elapsed="0.016188"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.616432" level="INFO">Current page contains text 'Hobbies'.</msg>
+<arg>Hobbies</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.593964" elapsed="0.022468"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.635230" level="INFO">Current page contains text 'Objectives'.</msg>
+<arg>Objectives</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.616432" elapsed="0.018798"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.655786" level="INFO">Current page contains text 'Skills'.</msg>
+<arg>Skills</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.635230" elapsed="0.020556"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.670334" level="INFO">Current page contains text 'Contact me:'.</msg>
+<arg>Contact me:</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.655786" elapsed="0.014548"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.569781" elapsed="0.106604"/>
+</test>
+<test id="s1-t4" name=" Verify WhatsApp Link Is Present" line="23">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.691473" level="INFO">Current page contains element 'css=a[href*="whatsapp"]'.</msg>
+<arg>css=a[href*="whatsapp"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.679268" elapsed="0.012205"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.676385" elapsed="0.015088"/>
+</test>
+<test id="s1-t5" name="Verify Email Link Is Present" line="26">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.711569" level="INFO">Current page contains element 'css=a[href^="mailto:"]'.</msg>
+<arg>css=a[href^="mailto:"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.696386" elapsed="0.015183"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.691473" elapsed="0.020096"/>
+</test>
+<test id="s1-t6" name="Verify LinkedIn Link Is Present" line="29">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.727402" level="INFO">Current page contains element 'css=a[href*="linkedin"]'.</msg>
+<arg>css=a[href*="linkedin"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.714210" elapsed="0.013192"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.714210" elapsed="0.013192"/>
+</test>
+<test id="s1-t7" name="Verify GitHub Link Is Present" line="32">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-19T19:26:20.746157" level="INFO">Current page contains element 'css=a[href*="github"]'.</msg>
+<arg>css=a[href*="github"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-19T19:26:20.731228" elapsed="0.015285"/>
+</kw>
+<status status="PASS" start="2024-02-19T19:26:20.727402" elapsed="0.019111"/>
+</test>
+<status status="PASS" start="2024-02-19T19:26:17.568611" elapsed="3.177902"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="frontEnd">frontEnd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
